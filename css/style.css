@@ -1,28 +1,26 @@
 @charset "utf-8";
 @import url("./normalize.css");
-@import url('./reset.css');
+@import url("./reset.css");
+
 .container{
-  background-color : silver;
-}
-.header{
- 
+  background-color: silver;
 }
 .visual{
-  background-color : lime;
+  background-color: lime;
 }
 .main{
-  background-color : blue;
+  background-color: blue;
 }
 .slogan{
-  background-color : orange;
+  background-color: orange;
 }
 .footer-bg{
-  background-color : gray;
+  background-color: gray;
 }
 .footer{
-  background-color : pink;
+  background-color: pink;
 }
-/*숨김콘텐츠*/
+/* 숨김 콘텐츠 */
 .a11y-hidden{
   position: absolute;
   width: 1px;
@@ -30,20 +28,19 @@
   overflow: hidden;
   margin: -1px;
   clip: rect(0,0,0,0);
-  clip-path: polygon(00,00,00);
-
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
+
 /* 레이아웃 */
 *, *::before, *::after{
-box-sizing: border-box;
-}
-body{
-  color:#181818;
+  box-sizing: border-box;
 }
 html{
+  font-size: 10px;
+}
+body{
   color: #181818;
-font-size: 1.4rem;
-
+  font-size: 1.4rem;
 }
 /* 링크 스타일 */
 a{
@@ -51,17 +48,16 @@ a{
   text-decoration: none;
 }
 .header, .visual, .main, .slogan, .footer{
-width: 940px;
-margin: 0 auto; 
-
+  width: 940px;
+  margin: 0 auto;
 }
 
 /* 헤더 */
 .header{
   background-color: #fff;
-  border-radius: 0 0 15px 15px; 
+  border-radius: 0 0 15px 15px;
   position: relative;
-  padding:0 30px;
+  padding: 0 30px;
 }
 /* 로고 */
 .logo{
@@ -79,13 +75,14 @@ margin: 0 auto;
 .member li , .member a{
   display: inline-block;
 }
-  .member li{
-    font-size: 1.4rem;
-  }
-.member a{
-text-transform: uppercase;
-padding : 5px 10px;
+.member li{
+  font-size: 1.4rem;
 }
+.member a{
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+
 
 /* 비주얼 */
 .visual{
@@ -98,20 +95,19 @@ padding : 5px 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
-
 .group{
-  background-color: cyan;
- }
+  background-color: aqua;
+}
 .group1{
   width: 250px;
 }
 .group2{
-  width:  380px;
+  width: 380px;
 }
 .group3{
- width: 190px;
+  width: 190px;
 }
 /* 슬로건 */
 .slogan{
