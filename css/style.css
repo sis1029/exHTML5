@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+@import url("./fontello.css");
 @import url("./normalize.css");
 @import url("./reset.css");
 
@@ -30,7 +32,6 @@
   clip: rect(0,0,0,0);
   clip-path: polygon(0 0, 0 0, 0 0);
 }
-
 /* 레이아웃 */
 *, *::before, *::after{
   box-sizing: border-box;
@@ -41,6 +42,8 @@ html{
 body{
   color: #181818;
   font-size: 1.4rem;
+  font-family: 'Spoqa Han Sans', 'Sans-serif'; 
+  font-weight: 300;
 }
 /* 링크 스타일 */
 a{
@@ -51,18 +54,17 @@ a{
   width: 940px;
   margin: 0 auto;
 }
-
 /* 헤더 */
 .header{
   background-color: #fff;
   border-radius: 0 0 15px 15px;
   position: relative;
-  padding: 0 30px;
+  padding: 0 30px 38px;
 }
 /* 로고 */
 .logo{
   position: absolute;
-  top: 45px;
+  top: 43px;
   left: 65px;
 }
 /* 멤버 링크 */
@@ -82,8 +84,65 @@ a{
   text-transform: uppercase;
   padding: 5px 10px;
 }
+/* 메인메뉴 */
+.menu{
+  background-color: orangered;
+  height: 47px;
+  padding-left: 228px;
+  border-top: 2px solid #000;
+}
+.menu-item{
+  float: left;
+  position: relative;
+  border-left: 2px solid rgba(255,255,255,0.5);
+
+}
+.sub-menu{
+  position: absolute;
+  top: 47px;
+  display: none;
+  
+}
+.sub-menu1, .sub-menu2, .sub-menu3{
+  left:0;
+}
+.sub-menu4, .sub-menu5, .sub-menu{
+  right:0;
+}
+.sub-menu li{
+  white-space: nowrap;
+}
+.sub-menu a{
+  display: block;
+  padding:  7px 10px;
+ margin-right: 2px ;
 
 
+}
+.menu-act .sub-menu{
+  display: flex;
+}
+.menu-act .sub-menu li{
+white-space: nowrap;
+}
+.btn-menu{
+  line-height: 45px;
+  display: block;
+  font-size: 1.7rem;
+  padding: 0 18px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0px 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+.menu-act .btn-menu{
+color: yellow;
+}
+.menu-act .btn-menu::after{
+  content: "";
+  background-color:#000;
+  display: block;
+  height: 2px;
+}
 /* 비주얼 */
 .visual{
   height: 10vh;
