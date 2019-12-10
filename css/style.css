@@ -21,7 +21,17 @@
 .footer{
   background-color : pink;
 }
+/*숨김콘텐츠*/
+.a11y-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0,0,0,0);
+  clip-path: polygon(00,00,00);
 
+}
 /* 레이아웃 */
 *, *::before, *::after{
 box-sizing: border-box;
@@ -37,7 +47,7 @@ margin: 0 auto;
 
 /* 헤더 */
 .header{
-  height: 10vh;
+ 
 }
 /* 비주얼 */
 .visual{
