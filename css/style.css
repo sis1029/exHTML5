@@ -4,6 +4,7 @@
 @import url("./normalize.css");
 @import url("./reset.css");
 @import url("./animation.css");
+
 .container{
   background-color: silver;
 }
@@ -153,12 +154,7 @@ a{
   top: 0;
   left: 0;
   background-repeat: no-repeat;
-  /* animation-name: bgAni;
-  animation-duration: 1000ms;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-animation-play-state: paused; */
-animation:bgAni 1000ma infinite alternate;
+  animation: bgAni 1000ms infinite alternate;
 }
 .visual::before{
   background-image: url("./images/ani_flower_01.png"), url("./images/ani_flower_02.png");
@@ -171,17 +167,16 @@ animation:bgAni 1000ma infinite alternate;
 }
 .visual-text{
   width: 500px;
-  background: #ff0;
+  background: yellow;
   animation-name: textAni;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
-  font-family: Georgia, 'Times New Romain, Times, serif';
-
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 /* 메인 콘텐츠 */
 .main{
   padding: 30px;
-  height: 120vh;
+  height: 60vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
