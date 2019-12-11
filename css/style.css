@@ -248,25 +248,26 @@ right: 0;
 
 }
 
-
-/* .login-form{
-  width: 50px;
-  position :
-  font
-
+/* 유효성 검사 배너 */
+.validation-list{
+  margin-top: 25px;
 }
-.user-Email{
-  width: 50px;
-  border-color:#aaa
-  border: 1px;
+.validation-list a{
+  display: block;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  padding: 8px 10px 8px 45px;
+  border-radius: 30px;
+  background: url('./images/validation_icon.png') no-repeat 20px 50%, #ccc linear-gradient(180deg, #ccc, #eee) repeat 0 0;
 }
-.user-Pw{
-  border-color:#aaa
-
-}
-.sign{
-  
+/* 
+.validation-list .li{
+  display: inline-block;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
 } */
+
 /* 슬로건 */
 .slogan{
   height: 10vh;
