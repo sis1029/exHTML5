@@ -318,6 +318,69 @@ a{
   margin-left: 2px;
 }
 
+/* 공지사항 및 자료실*/
+.board{
+margin-top: 20px;
+padding-top: 45px;
+}
+.board [class*="-list"], .board [class*="-more"]{
+  display: none;
+}
+.tab-act [class*="-list"], .tab-act [class*="-more"]{
+  display: block !important;
+}
+
+.board [class*="-more"]{
+position: absolute;
+top: -8;
+right: -8;
+padding: 8px;
+}
+.tab{
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  color: #666;
+  background: #ccc linear-gradient(#cccc,#eee);
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  font-weight: 400;
+  cursor: pointer;
+
+}
+.tab-act .tab{
+  background:  #fff;
+  border-color: rgb(240,81,11) rgb(240,81,11) #fff rgb(240,81,11);
+  color: rgb(240,81,11);
+  z-index: 10;
+  outline: 0;
+}
+.notic-heading{
+  left: 0;
+}
+.pds-heading{
+  left: 74px;
+}
+
+.board [class*="-list"] li{
+margin-bottom: 5px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.board [class*="-list"] a{
+width: 300px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+padding:5px 0;
+}
+.board [class*="-list"] time{
+
+}
+.board .icon-plus::before{
+  color: hsla(110, 50% 50% 1);
+
 /* 슬로건 */
 .slogan{
   height: 10vh;
