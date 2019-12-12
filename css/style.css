@@ -1,12 +1,9 @@
-
-  
 @charset "utf-8";
 @import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
 @import url("./fontello.css");
 @import url("./normalize.css");
 @import url("./reset.css");
 @import url("./animation.css");
-
 
 /* 숨김 콘텐츠 */
 .a11y-hidden, legend{
@@ -41,12 +38,11 @@ a{
   width: 940px;
   margin: 0 auto;
 }
-
-/* 컨테이너*/
+/* 컨테이너 */
 .container{
-  background: url("./images/bg_flower.png") no-repeat 50% 0, #ccc linear-gradient(#ccc 0% #eee 35%, #fff 50% #fff 100%);
+  background: url("./images/bg_flower.png") no-repeat 50% 0, 
+  #ccc linear-gradient(#ccc 0%, #eee 35%, #fff 60%, #fff 100%);
 }
-
 /* 헤더 */
 .header{
   background-color: #fff;
@@ -431,22 +427,19 @@ a{
   right: -8px;
   padding: 8px;
 }
-
 /* 슬로건 */
 .slogan{
- padding: 10px 70px 10px 170px;
-
- position: relative;
+  padding: 10px 70px 10px 170px;
+  position: relative;
 }
 .slogan-heading{
- 
   width: 110px;
   height: 83px;
   text-align: center;
   line-height: 83px;
-position: absolute;
-bottom: -25px;
-left: 30px;
+  position: absolute;
+  bottom: -25px;
+  left: 30px;
 }
 .slogan-heading::after{
   content: "";
@@ -460,17 +453,15 @@ left: 30px;
 .slogan-content{
   color: #a09784;
   font-size: 1.5rem;
-
 }
 .director-name{
   font-weight: 400;
 }
-
 /* 푸터 */
 .footer-bg{
-background: #ccc linear-gradient(#ccc 0% #eee 35%, #fff 50% #fff 100%);
+  background:#ccc linear-gradient(#ccc 0%, #eee 35%, #fff 60%, #fff 100%);
 }
 .footer{
-  height: 10vh;
+  height: 30vh;
   padding: 10px 0;
 }
