@@ -504,7 +504,6 @@ a{
   padding: 10px 0;
 }
 /* 인기사이트 */
-
 .favorite{
   margin-top: 20px;
   background: #ccc linear-gradient(#ccc, #eee);
@@ -514,12 +513,9 @@ a{
   position: relative;
 }
 .favorite-list{
-
   counter-reset: number;
 }
-
 .favorite-list li{
- 
   counter-increment: number;
   margin-top: 10px;
   display: flex;
@@ -539,25 +535,18 @@ a{
   height: 11px;
   background-image: url("./images/rank.png");
   background-repeat: no-repeat;
-
   margin-left: auto;
 }
 
 .up{
   background-position: 0 0;
-
 }
 .stop{
-  background-position: 0 50%;
-  
+  background-position: 0 50%; 
 }
 .down{
   background-position: 0 100%;
-  
 }
-
- 
-
 .favorite-more{
   position: absolute;
   padding: 8px;
@@ -600,6 +589,46 @@ a{
   background:#ccc linear-gradient(#ccc 0%, #eee 35%, #fff 60%, #fff 100%);
 }
 .footer{
-  height: 30vh;
-  padding: 10px 0;
+  padding: 10px 70px 10px 170px;
+  background: yellow;
+
+}
+/* 푸터 로고 */
+.footer-logo{
+position: relative;
+ top: 50px;
+ left: 30px;
+}
+/* 가이드고 */
+
+.guide-list{
+  background: #7b8385;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-around;
+  padding: 2px 15px;
+}
+.guide-list a{
+  display: block;
+  padding: 5px 10px;
+}
+
+/* 주소및 저작권 */
+.address{
+margin: 10px 0 5px;
+
+}
+.address span{
+  margin-right: 1em;
+}
+
+
+/* 푸터 로고 */
+.badge{
+  position: absolute;
+  top: 50px;
+  right: 30px;
+
 }
