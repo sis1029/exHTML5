@@ -458,6 +458,7 @@ a{
   position: absolute;
   top: 3px;
   right: 0;
+  font-size: 0;
 }
 .btn-event-prev, .btn-event-next{
   width: 19px;
@@ -466,16 +467,46 @@ a{
   padding: 0;
   background-image: url("./images/back_forward.png");
   background-repeat: no-repeat;
+  font-size: 1.4rem;
 }
 .btn-event-prev{
   background-position: 0 0;
 }
 .btn-event-next{
   background-position: -36px 0;
+  margin-left: 5px;
 }
 .related{
   margin-top: 10px;
 }
+.related-list{
+  background: #fff;
+  height: 27px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.45s 0s ease-in-out;
+  margin-top: 10px;
+}
+.related-list li{
+  padding: 2px;
+}
+.related-list a{
+  display: block;
+  line-height: 21px;
+  text-indent: 1em;
+}
+.related-list a:hover{
+  color: rgba(240,81,11);
+}
+.related-list:hover{
+  height: 147px;
+  padding: 10px 0;
+}
+
+
+
+
 
 /* 슬로건 */
 .slogan{
